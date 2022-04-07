@@ -44,72 +44,9 @@ const showScore = document.querySelector("#showScore");
 const allForm = document.getElementById("myForm");
 const showScores = document.getElementById("showScore");
 const playAgainBtn = document.getElementsByClassName("playAgainBtn1");
-// const loadQuestion=()=>{
-//   const questionList = quizDB[questionCount];
-
-//    question.innerText = questionList.question ;
-//    option1.innerHTML = questionList.a;
-//    option2.innerHTML = questionList.b;
-//    option3.innerHTML = questionList.c;
-//    option4.innerHTML = questionList.d;
-// }
-
-// loadQuestion()
-// const  removeChecked=()=>{
-//   answers.forEach((curAnsEle)=>{
-//     if(curAnsEle.checked){
-//       curAnsEle.checked=false
-//     }
-//   })
-// }
-
-// const getCheckAnswer = ()=>{
-//    let  answer;
-//    answers.forEach((curAnsEle)=>{
-//   if(curAnsEle.checked){
-//   answer = curAnsEle.id;
-//   }
-
-//    })
-//     return answer;
-
-// }
-// let score=0;
-
-// submit.addEventListener("click",()=>{
-//  const  checkAnswer = getCheckAnswer()
-//  console.log(checkAnswer)
-//  if(checkAnswer===quizDB[questionCount].ans){
-//  score++;
-
-//  }
-//  removeChecked()
-//  questionCount++;
-//  if(questionCount < quizDB.length){
-//    loadQuestion()
-//  }else{
-//  showScore.innerHTML=`
-//  <h2> you scored ${score}/${quizDB.length}</h3>
-//  <button class="btn" onclick="location.reload()">play again</button>
-//  `
-//  showScore.classList.remove('scoreArea')
-//  }
-
-// })
 
 var ind = 0;
 var score = 0;
-// function submitButtun() {
-//   console.log(submit);
-// }
-// if(ind<allAnswers.length){
-
-//   loadQue();
-// }else{
-//   mainDiv.style.display="none";
-//   showScores.innerHTML=`your score is${score} out of ${quizDB.length} `
-//   showScore.style.display=""
-// }
 function loadQue() {
   if (ind < quizDB.length) {
     question.innerHTML = quizDB[ind].question;

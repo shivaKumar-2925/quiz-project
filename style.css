@@ -1,68 +1,84 @@
- 
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-family:sans-serif;
- 
+  font-family: sans-serif;
 }
-html{
+html {
   font-size: 100%;
 }
-.main-div{
+.main-div {
   width: 100vw;
- height: 100vh;
- box-sizing: border-box;
- display: flex;
- justify-content: center;
- align-items: center;
- background-color: rgb(217, 222, 226);
- }
- .inner-div{
-   width: 45vw;
-    background-color: #fff;
-   padding: 30px 80px;
-   border-radius: 10px;
-   box-shadow: 0 5px 5px grey;
-  }
-.inner-div h2{
-  font-size: 25px;
-  font-weight:bolder; 
-  margin :15px 0px 15px -5px;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(217, 222, 226);
 }
-.inner-div li{
+.inner-div {
+  width: 45vw;
+  background-color: #fff;
+  padding: 30px 80px;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px grey;
+}
+.inner-div h2 {
+  font-size: 25px;
+  font-weight: bolder;
+  margin: 15px 0px 15px -5px;
+}
+.inner-div li {
   font-size: 16px;
   font-weight: lighter;
-  margin-top:8px;
+  margin-top: 8px;
   list-style: none;
+}
+input,
+label {
+  cursor: pointer;
+}
+#submit,
+.btn {
+  padding: 10px 30px;
+  outline: none;
+  font-size: 400;
+  margin: auto;
+  display: block;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: rgb(90, 212, 41);
+  margin-top: 20px;
+}
+#submit:hover {
+  background-color: rgb(15, 40, 117);
+}
+#showScore {
+  height: 150px;
+  background-color: rgb(213, 216, 219);
+  margin-top: 2rem;
+  padding: 3rem 4rem;
+  box-shadow: 0 5px 5px grey;
+  display: none;
+  color: rgb(0, 0, 0);
+  font-family: monospace;
+  font-size: 18px;
+  font-weight: bolder !important;
+}
+.playAgainBtn1 {
+  padding: 8px;
+  margin-top: 20px;
+  margin-left: 80px;
+  background-color: rgb(27, 34, 31);
+  color: white;
+  border: none;
+  border-radius: 4px;
+ transition: all 0.5s ease;
+}
+.playAgainBtn1:hover{
+background-color: black;
+}
+/* .scoreArea{
  
- }
- input,label{
-   cursor: pointer;
- }
-#submit,.btn{
-padding:10px 30px;
-outline: none;
-font-size: 400;
-margin: auto;
-display: block;
-border:none;
-text-transform: uppercase;
-color:#fff;
-background-color: rgb(90, 212, 41);
-margin-top: 20px;
- }
- #submit:hover{
-   background-color: rgb(15, 40, 117);
- }
- #showScore{
-   background-color: rgb(213, 216, 219);
-   margin-top:2rem;
-   padding:3rem 4rem ;
-   box-shadow: 0 5px 5px grey;
-
- }
- .scoreArea{
-   display:none;
- }
- 
+ } */
